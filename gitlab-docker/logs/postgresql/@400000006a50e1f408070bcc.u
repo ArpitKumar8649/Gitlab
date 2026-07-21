@@ -1,0 +1,100 @@
+2026-07-10_12:00:39.30563 LOG:  starting PostgreSQL 17.8 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-07-10_12:00:39.90944 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2026-07-10_12:00:40.83708 LOG:  database system was interrupted; last known up at 2026-07-10 06:39:07 GMT
+2026-07-10_12:00:44.38389 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-07-10_12:00:44.39655 LOG:  redo starts at 0/24DF2410
+2026-07-10_12:00:44.39657 LOG:  invalid record length at 0/24DF24A8: expected at least 24, got 0
+2026-07-10_12:00:44.39659 LOG:  redo done at 0/24DF2430 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-07-10_12:00:44.42854 LOG:  database system is ready to accept connections
+2026-07-10_12:03:00.55615 LOG:  duration: 6651.246 ms  statement: 				SELECT t.oid, t.typname, t.typelem, t.typdelim, ti.proname AS typinput
+2026-07-10_12:03:00.55619 					FROM pg_type as t
+2026-07-10_12:03:00.55620 					JOIN pg_proc as ti ON ti.oid = t.typinput
+2026-07-10_12:03:00.55620 	
+2026-07-10_12:03:00.70088 LOG:  duration: 1406.562 ms  statement: SELECT COUNT(*) as transactions,
+2026-07-10_12:03:00.70091 	coalesce(MAX(EXTRACT(EPOCH FROM (clock_timestamp() - xact_start))), 0) AS age_in_seconds
+2026-07-10_12:03:00.70092 	FROM pg_stat_activity
+2026-07-10_12:03:00.70093 	WHERE state is distinct from 'idle' AND (now() - xact_start) > '1 minutes'::interval AND query not like 'autovacuum:%'
+2026-07-10_12:03:00.70094 	
+2026-07-10_12:03:03.77761 LOG:  duration: 3205.827 ms  statement: SELECT COUNT(*) FROM licenses
+2026-07-10_12:03:03.77765 	
+2026-07-10_12:03:03.77790 LOG:  duration: 1918.074 ms  statement: SELECT COUNT(*) FROM licenses
+2026-07-10_12:03:03.77792 	
+2026-07-10_12:03:06.73806 LOG:  duration: 7518.961 ms  statement: SELECT
+2026-07-10_12:03:06.73811 			current_database() datname,
+2026-07-10_12:03:06.73812 			schemaname,
+2026-07-10_12:03:06.73812 			relname,
+2026-07-10_12:03:06.73813 			heap_blks_read,
+2026-07-10_12:03:06.73814 			heap_blks_hit,
+2026-07-10_12:03:06.73814 			idx_blks_read,
+2026-07-10_12:03:06.73815 			idx_blks_hit,
+2026-07-10_12:03:06.73816 			toast_blks_read,
+2026-07-10_12:03:06.73816 			toast_blks_hit,
+2026-07-10_12:03:06.73817 			tidx_blks_read,
+2026-07-10_12:03:06.73817 			tidx_blks_hit
+2026-07-10_12:03:06.73818 		FROM pg_statio_user_tables
+2026-07-10_12:03:09.38516 LOG:  duration: 5606.573 ms  statement: SELECT
+2026-07-10_12:03:09.38520 	  projects.namespace_id,
+2026-07-10_12:03:09.38521 	  p_ci_builds.status,
+2026-07-10_12:03:09.38522 	  projects.shared_runners_enabled,
+2026-07-10_12:03:09.38523 	  (COALESCE(namespaces.shared_runners_minutes_limit, application_settings.shared_runners_minutes, 0) = 0 OR
+2026-07-10_12:03:09.38523 	     COALESCE(namespace_statistics.shared_runners_seconds, 0) < COALESCE(namespaces.shared_runners_minutes_limit, application_settings.shared_runners_minutes, 0) * 60) as has_minutes,
+2026-07-10_12:03:09.38524 	  COUNT(*) AS count
+2026-07-10_12:03:09.38525 	FROM p_ci_builds
+2026-07-10_12:03:09.38526 	JOIN projects
+2026-07-10_12:03:09.38526 	  ON projects.id = p_ci_builds.project_id
+2026-07-10_12:03:09.38527 	JOIN namespaces
+2026-07-10_12:03:09.38528 	  ON namespaces.id = projects.namespace_id
+2026-07-10_12:03:09.38528 	LEFT JOIN namespace_statistics
+2026-07-10_12:03:09.38529 	  ON namespace_statistics.namespace_id = namespaces.id
+2026-07-10_12:03:09.38530 	JOIN application_settings ON (TRUE)
+2026-07-10_12:03:09.38531 	WHERE p_ci_builds.type = 'Ci::Build'
+2026-07-10_12:03:09.38531 	  AND p_ci_builds.status = 'created'
+2026-07-10_12:03:09.38532 	  -- The created_at filter has been introduced for performance reasons only
+2026-07-10_12:03:09.38533 	  AND p_ci_builds.created_at > NOW() - INTERVAL '7 days'
+2026-07-10_12:03:09.38533 	  AND projects.pending_delete = 'f'
+2026-07-10_12:03:09.38534 	GROUP BY
+2026-07-10_12:03:09.38535 	  projects.namespace_id,
+2026-07-10_12:03:09.38535 	  p_ci_builds.status,
+2026-07-10_12:03:09.38536 	  projects.shared_runners_enabled,
+2026-07-10_12:03:09.38538 	  namespaces.shared_runners_minutes_limit,
+2026-07-10_12:03:09.38540 	  namespace_statistics.shared_runners_seconds,
+2026-07-10_12:03:09.38541 	  application_settings.shared_runners_minutes
+2026-07-10_12:03:09.38541 	
+2026-07-10_12:03:09.38630 LOG:  duration: 5607.912 ms  statement: SELECT
+2026-07-10_12:03:09.38632 	  projects.namespace_id,
+2026-07-10_12:03:09.38632 	  p_ci_builds.status,
+2026-07-10_12:03:09.38633 	  projects.shared_runners_enabled,
+2026-07-10_12:03:09.38633 	  (COALESCE(namespaces.shared_runners_minutes_limit, application_settings.shared_runners_minutes, 0) = 0 OR
+2026-07-10_12:03:09.38635 	     COALESCE(namespace_statistics.shared_runners_seconds, 0) < COALESCE(namespaces.shared_runners_minutes_limit, application_settings.shared_runners_minutes, 0) * 60) as has_minutes,
+2026-07-10_12:03:09.38635 	  COUNT(*) AS count
+2026-07-10_12:03:09.38636 	FROM p_ci_builds
+2026-07-10_12:03:09.38636 	JOIN projects
+2026-07-10_12:03:09.38637 	  ON projects.id = p_ci_builds.project_id
+2026-07-10_12:03:09.38637 	JOIN namespaces
+2026-07-10_12:03:09.38638 	  ON namespaces.id = projects.namespace_id
+2026-07-10_12:03:09.38638 	LEFT JOIN namespace_statistics
+2026-07-10_12:03:09.38639 	  ON namespace_statistics.namespace_id = namespaces.id
+2026-07-10_12:03:09.38639 	JOIN application_settings ON (TRUE)
+2026-07-10_12:03:09.38639 	WHERE p_ci_builds.type = 'Ci::Build'
+2026-07-10_12:03:09.38640 	  AND p_ci_builds.status = 'created'
+2026-07-10_12:03:09.38640 	  -- The created_at filter has been introduced for performance reasons only
+2026-07-10_12:03:09.38641 	  AND p_ci_builds.created_at > NOW() - INTERVAL '7 days'
+2026-07-10_12:03:09.38642 	  AND projects.pending_delete = 'f'
+2026-07-10_12:03:09.38642 	GROUP BY
+2026-07-10_12:03:09.38643 	  projects.namespace_id,
+2026-07-10_12:03:09.38643 	  p_ci_builds.status,
+2026-07-10_12:03:09.38644 	  projects.shared_runners_enabled,
+2026-07-10_12:03:09.38646 	  namespaces.shared_runners_minutes_limit,
+2026-07-10_12:03:09.38647 	  namespace_statistics.shared_runners_seconds,
+2026-07-10_12:03:09.38647 	  application_settings.shared_runners_minutes
+2026-07-10_12:03:09.38648 	
+2026-07-10_12:03:12.35846 LOG:  duration: 1497.908 ms  statement: SELECT COUNT(*) FROM uploads;
+2026-07-10_12:03:12.35856 LOG:  duration: 1488.033 ms  statement: SELECT COUNT(*) FROM uploads;
+2026-07-10_12:03:14.58416 LOG:  duration: 11637.268 ms  statement: SELECT relnamespace::regnamespace as schemaname,
+2026-07-10_12:03:14.58419 	       relname as relname,
+2026-07-10_12:03:14.58420 	       pg_total_relation_size(oid) bytes
+2026-07-10_12:03:14.58421 	  FROM pg_class
+2026-07-10_12:03:14.58421 	 WHERE relkind = 'r';
+2026-07-10_12:03:14.58422 	
+2026-07-10_12:05:10.57886 ERROR:  relation "table_without_models" does not exist
+2026-07-10_12:05:10.57890 STATEMENT:  SELECT pg_get_serial_sequence('table_without_models', 'id')

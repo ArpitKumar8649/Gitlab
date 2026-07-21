@@ -1,0 +1,30 @@
+version: '3.6'
+services:
+  gitlab:
+    image: 'gitlab/gitlab-ee:latest'
+    container_name: gitlab
+    restart: always
+    hostname: 'localhost'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://localhost'
+        gitlab_rails['initial_root_password'] = "MySuperSecretPassword123!"
+    ports:
+      - '8080:80'
+      - '8443:443'
+      - '2424:22'
+    volumes:
+      - './config:/etc/gitlab'
+      - './logs:/var/log/gitlab'
+      - './data:/var/opt/gitlab'
+    shm_size: '256m'
+
+  runner:
+    image: 'gitlab/gitlab-runner:latest'
+    container_name: gitlab-runner
+    restart: always
+    depends_on:
+      - gitlab
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+      - './runner-config:/etc/gitlab-runner'

@@ -1,0 +1,104 @@
+2026-07-10_12:14:24.59627 time=2026-07-10T12:14:23.627Z level=INFO source=main.go:1678 msg="updated GOGC" old=100 new=75
+2026-07-10_12:14:24.59634 time=2026-07-10T12:14:23.627Z level=INFO source=main.go:744 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+2026-07-10_12:14:24.59634 time=2026-07-10T12:14:23.628Z level=INFO source=memlimit.go:198 msg="GOMEMLIMIT is updated" component=automemlimit package=github.com/KimMachineGun/automemlimit/memlimit GOMEMLIMIT=15095583129 previous=9223372036854775807
+2026-07-10_12:14:24.59636 time=2026-07-10T12:14:23.628Z level=INFO source=main.go:851 msg="Starting Prometheus Server" mode=server version="(version=3.11.2, branch=master, revision=f0f0fdd679dcd6df320b0558b20919f7cd44c407-modified)"
+2026-07-10_12:14:24.59636 time=2026-07-10T12:14:23.628Z level=INFO source=main.go:856 msg="operational information" build_context="(go=go1.25.9, platform=linux/amd64, user=GitLab-Omnibus, date=, tags=netgo,builtinassets,stringlabels)" host_details="(Linux 6.8.0-1052-azure #58~22.04.1-Ubuntu SMP Thu Mar 26 05:02:21 UTC 2026 x86_64 localhost (none))" fd_limits="(soft=50000, hard=50000)" vm_limits="(soft=unlimited, hard=unlimited)"
+2026-07-10_12:14:24.59639 time=2026-07-10T12:14:23.832Z level=INFO source=web.go:710 msg="Start listening for connections" component=web address=localhost:9090
+2026-07-10_12:14:24.59639 time=2026-07-10T12:14:23.833Z level=INFO source=main.go:1410 msg="Starting TSDB ..."
+2026-07-10_12:14:24.59640 time=2026-07-10T12:14:23.833Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1783661471445 maxt=1783663200000 ulid=01KX5YH7BEQMDHZQ1Q892FDWXQ
+2026-07-10_12:14:24.59641 time=2026-07-10T12:14:23.833Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1783663201795 maxt=1783670400000 ulid=01KX5YH8N7WPSN1Y9BGPK1R9E1
+2026-07-10_12:14:24.59641 time=2026-07-10T12:14:23.833Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1783235887658 maxt=1783245600000 ulid=01KX5YHBM4NQ2F91N07EBH5Z2F
+2026-07-10_12:14:24.59642 time=2026-07-10T12:14:23.833Z level=WARN source=dir_locker.go:75 msg="A lockfile from a previous execution already existed. It was replaced" component=tsdb file=/var/opt/gitlab/prometheus/data/lock
+2026-07-10_12:14:24.59643 time=2026-07-10T12:14:23.839Z level=INFO source=tls_config.go:354 msg="Listening on" component=web address=127.0.0.1:9090
+2026-07-10_12:14:24.59645 time=2026-07-10T12:14:23.839Z level=INFO source=tls_config.go:357 msg="TLS is disabled." component=web http2=false address=127.0.0.1:9090
+2026-07-10_12:14:24.59646 time=2026-07-10T12:14:23.855Z level=INFO source=head.go:698 msg="Replaying on-disk memory mappable chunks if any" component=tsdb
+2026-07-10_12:14:24.59647 time=2026-07-10T12:14:23.856Z level=INFO source=head.go:784 msg="On-disk memory mappable chunks replay completed" component=tsdb duration=3.736µs
+2026-07-10_12:14:24.59647 time=2026-07-10T12:14:23.856Z level=INFO source=head.go:792 msg="Replaying WAL, this may take a while" component=tsdb
+2026-07-10_12:14:24.59647 time=2026-07-10T12:14:24.085Z level=INFO source=head.go:829 msg="WAL checkpoint loaded" component=tsdb
+2026-07-10_12:14:25.37370 time=2026-07-10T12:14:25.372Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=6 maxSegment=9 duration=1.286764344s
+2026-07-10_12:14:25.37373 time=2026-07-10T12:14:25.372Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=7 maxSegment=9 duration=562.694µs
+2026-07-10_12:14:26.25426 time=2026-07-10T12:14:26.253Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=8 maxSegment=9 duration=881.090023ms
+2026-07-10_12:14:26.25432 time=2026-07-10T12:14:26.254Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=9 maxSegment=9 duration=336.92µs
+2026-07-10_12:14:26.25433 time=2026-07-10T12:14:26.254Z level=INFO source=head.go:902 msg="WAL replay completed" component=tsdb checkpoint_replay_duration=229.245727ms wal_replay_duration=2.168973136s wbl_replay_duration=320ns chunk_snapshot_load_duration=0s mmap_chunk_replay_duration=3.736µs total_replay_duration=2.398272613s
+2026-07-10_12:14:26.34308 time=2026-07-10T12:14:26.339Z level=INFO source=main.go:1431 msg="filesystem information" fs_type=EXT4_SUPER_MAGIC
+2026-07-10_12:14:26.34314 time=2026-07-10T12:14:26.339Z level=INFO source=main.go:1434 msg="TSDB started"
+2026-07-10_12:14:26.34316 time=2026-07-10T12:14:26.339Z level=INFO source=main.go:1632 msg="Loading configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml
+2026-07-10_12:14:26.34471 time=2026-07-10T12:14:26.344Z level=INFO source=main.go:1048 msg="TSDB retention updated" duration=15d size=0B percentage=0
+2026-07-10_12:14:26.34507 time=2026-07-10T12:14:26.345Z level=ERROR source=manager.go:506 msg="Cannot create service discovery" component="discovery manager scrape" err="unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes config=kubernetes-nodes
+2026-07-10_12:14:26.34816 time=2026-07-10T12:14:26.348Z level=ERROR source=manager.go:506 msg="Cannot create service discovery" component="discovery manager scrape" err="unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes config=kubernetes-pods
+2026-07-10_12:14:26.34908 time=2026-07-10T12:14:26.348Z level=ERROR source=manager.go:506 msg="Cannot create service discovery" component="discovery manager scrape" err="unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes config=kubernetes-cadvisor
+2026-07-10_12:14:26.36048 time=2026-07-10T12:14:26.359Z level=INFO source=main.go:1671 msg="Completed loading of configuration file" db_storage=73.329µs remote_storage=2.314µs web_handler=611ns query_engine=882ns scrape=211.183µs scrape_sd=3.457945ms notify=128.15µs notify_sd=13.901µs rules=11.186913ms tracing=5.848µs filename=/var/opt/gitlab/prometheus/prometheus.yml totalDuration=19.839831ms
+2026-07-10_12:14:26.36053 time=2026-07-10T12:14:26.360Z level=INFO source=main.go:1395 msg="Server is ready to receive web requests."
+2026-07-10_12:14:26.36056 time=2026-07-10T12:14:26.360Z level=INFO source=manager.go:209 msg="Starting rule manager..." component="rule manager"
+2026-07-10_12:14:31.36235 time=2026-07-10T12:14:31.362Z level=ERROR source=manager.go:266 msg="error creating new scrape pool" component="scrape manager" err="error creating HTTP client: unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-nodes
+2026-07-10_12:14:31.36270 time=2026-07-10T12:14:31.362Z level=ERROR source=manager.go:266 msg="error creating new scrape pool" component="scrape manager" err="error creating HTTP client: unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-pods
+2026-07-10_12:14:31.36279 time=2026-07-10T12:14:31.362Z level=ERROR source=manager.go:266 msg="error creating new scrape pool" component="scrape manager" err="error creating HTTP client: unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-cadvisor
+2026-07-10_12:14:32.22412 time=2026-07-10T12:14:32.224Z level=INFO source=compact.go:590 msg="write block started" component=tsdb mint=1783670400000 maxt=1783677600000 ulid=01KX5Z6V907D0M0NY60Z18HAH6
+2026-07-10_12:14:32.32994 time=2026-07-10T12:14:32.329Z level=INFO source=compact.go:618 msg="write block resulted in empty block" component=tsdb mint=1783670400000 maxt=1783677600000 duration=105.803445ms
+2026-07-10_12:14:32.33025 time=2026-07-10T12:14:32.330Z level=INFO source=head.go:1478 msg="Head GC started" component=tsdb caller=truncateMemory
+2026-07-10_12:14:32.35338 time=2026-07-10T12:14:32.353Z level=INFO source=head.go:1482 msg="Head GC completed" component=tsdb caller=truncateMemory duration=22.897052ms
+2026-07-10_12:14:32.35379 time=2026-07-10T12:14:32.353Z level=INFO source=checkpoint.go:109 msg="Creating checkpoint" component=tsdb from_segment=6 to_segment=7 mint=1783677600000
+2026-07-10_12:14:33.27604 time=2026-07-10T12:14:33.275Z level=INFO source=head.go:1443 msg="WAL checkpoint complete" component=tsdb first=6 last=7 duration=922.369145ms
+2026-07-10_12:15:32.39916 time=2026-07-10T12:15:32.396Z level=WARN source=main.go:1191 msg="Received an OS signal, exiting gracefully..." signal=terminated
+2026-07-10_12:15:32.39919 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1216 msg="Stopping scrape discovery manager..."
+2026-07-10_12:15:32.39920 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1230 msg="Stopping notify discovery manager..."
+2026-07-10_12:15:32.39921 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1245 msg="Stopping rule manager manager..."
+2026-07-10_12:15:32.39921 time=2026-07-10T12:15:32.396Z level=INFO source=manager.go:223 msg="Stopping rule manager..." component="rule manager"
+2026-07-10_12:15:32.39923 time=2026-07-10T12:15:32.396Z level=INFO source=manager.go:239 msg="Rule manager stopped" component="rule manager"
+2026-07-10_12:15:32.39923 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1226 msg="Notify discovery manager stopped"
+2026-07-10_12:15:32.39924 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1269 msg="Stopping scrape manager..."
+2026-07-10_12:15:32.39925 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1241 msg="Rule manager stopped"
+2026-07-10_12:15:32.39926 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1284 msg="Stopping tracing manager..."
+2026-07-10_12:15:32.39929 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1369 msg="Stopping reloaders..."
+2026-07-10_12:15:32.39929 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1458 msg="Stopping storage..."
+2026-07-10_12:15:32.39931 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1261 msg="Scrape manager stopped"
+2026-07-10_12:15:32.39931 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1280 msg="Tracing manager stopped"
+2026-07-10_12:15:32.39932 time=2026-07-10T12:15:32.396Z level=INFO source=main.go:1361 msg="Reloaders stopped"
+2026-07-10_12:15:32.39933 time=2026-07-10T12:15:32.398Z level=INFO source=main.go:1212 msg="Scrape discovery manager stopped"
+2026-07-10_12:15:32.42231 time=2026-07-10T12:15:32.422Z level=INFO source=main.go:1536 msg="Stopping web handler..."
+2026-07-10_12:15:32.42246 time=2026-07-10T12:15:32.422Z level=INFO source=main.go:1559 msg="Stopping notifier manager..."
+2026-07-10_12:15:32.42280 time=2026-07-10T12:15:32.422Z level=INFO source=manager.go:321 msg="Stopping notification manager..." component=notifier
+2026-07-10_12:15:32.42290 time=2026-07-10T12:15:32.422Z level=INFO source=main.go:1454 msg="TSDB stopped"
+2026-07-10_12:15:32.42296 time=2026-07-10T12:15:32.422Z level=INFO source=main.go:1532 msg="Web handler stopped"
+2026-07-10_12:15:32.42301 time=2026-07-10T12:15:32.422Z level=INFO source=main.go:1555 msg="Notifier manager stopped"
+2026-07-10_12:15:32.42325 time=2026-07-10T12:15:32.423Z level=INFO source=main.go:1570 msg="See you next time!"
+2026-07-10_12:15:32.49029 time=2026-07-10T12:15:32.490Z level=INFO source=main.go:1678 msg="updated GOGC" old=100 new=75
+2026-07-10_12:15:32.49312 time=2026-07-10T12:15:32.490Z level=INFO source=main.go:744 msg="Leaving GOMAXPROCS=4: CPU quota undefined" component=automaxprocs
+2026-07-10_12:15:32.49315 time=2026-07-10T12:15:32.490Z level=INFO source=memlimit.go:198 msg="GOMEMLIMIT is updated" component=automemlimit package=github.com/KimMachineGun/automemlimit/memlimit GOMEMLIMIT=15095583129 previous=9223372036854775807
+2026-07-10_12:15:32.49317 time=2026-07-10T12:15:32.491Z level=INFO source=main.go:851 msg="Starting Prometheus Server" mode=server version="(version=3.11.2, branch=master, revision=f0f0fdd679dcd6df320b0558b20919f7cd44c407-modified)"
+2026-07-10_12:15:32.49320 time=2026-07-10T12:15:32.491Z level=INFO source=main.go:856 msg="operational information" build_context="(go=go1.25.9, platform=linux/amd64, user=GitLab-Omnibus, date=, tags=netgo,builtinassets,stringlabels)" host_details="(Linux 6.8.0-1052-azure #58~22.04.1-Ubuntu SMP Thu Mar 26 05:02:21 UTC 2026 x86_64 localhost (none))" fd_limits="(soft=50000, hard=50000)" vm_limits="(soft=unlimited, hard=unlimited)"
+2026-07-10_12:15:32.64587 time=2026-07-10T12:15:32.645Z level=INFO source=web.go:710 msg="Start listening for connections" component=web address=localhost:9090
+2026-07-10_12:15:32.64664 time=2026-07-10T12:15:32.646Z level=INFO source=main.go:1410 msg="Starting TSDB ..."
+2026-07-10_12:15:32.64693 time=2026-07-10T12:15:32.646Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1783661471445 maxt=1783663200000 ulid=01KX5YH7BEQMDHZQ1Q892FDWXQ
+2026-07-10_12:15:32.64697 time=2026-07-10T12:15:32.646Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1783663201795 maxt=1783670400000 ulid=01KX5YH8N7WPSN1Y9BGPK1R9E1
+2026-07-10_12:15:32.64703 time=2026-07-10T12:15:32.647Z level=INFO source=repair.go:54 msg="Found healthy block" component=tsdb mint=1783235887658 maxt=1783245600000 ulid=01KX5YHBM4NQ2F91N07EBH5Z2F
+2026-07-10_12:15:32.65056 time=2026-07-10T12:15:32.650Z level=INFO source=tls_config.go:354 msg="Listening on" component=web address=127.0.0.1:9090
+2026-07-10_12:15:32.65061 time=2026-07-10T12:15:32.650Z level=INFO source=tls_config.go:357 msg="TLS is disabled." component=web http2=false address=127.0.0.1:9090
+2026-07-10_12:15:32.65381 time=2026-07-10T12:15:32.653Z level=INFO source=head.go:698 msg="Replaying on-disk memory mappable chunks if any" component=tsdb
+2026-07-10_12:15:32.65386 time=2026-07-10T12:15:32.653Z level=INFO source=head.go:784 msg="On-disk memory mappable chunks replay completed" component=tsdb duration=1.222µs
+2026-07-10_12:15:32.65393 time=2026-07-10T12:15:32.653Z level=INFO source=head.go:792 msg="Replaying WAL, this may take a while" component=tsdb
+2026-07-10_12:15:32.88908 time=2026-07-10T12:15:32.886Z level=INFO source=head.go:829 msg="WAL checkpoint loaded" component=tsdb
+2026-07-10_12:15:33.60025 time=2026-07-10T12:15:33.600Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=8 maxSegment=11 duration=713.440205ms
+2026-07-10_12:15:33.60075 time=2026-07-10T12:15:33.600Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=9 maxSegment=11 duration=381.095µs
+2026-07-10_12:15:33.63998 time=2026-07-10T12:15:33.639Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=10 maxSegment=11 duration=39.109765ms
+2026-07-10_12:15:33.64130 time=2026-07-10T12:15:33.641Z level=INFO source=head.go:865 msg="WAL segment loaded" component=tsdb segment=11 maxSegment=11 duration=173.177µs
+2026-07-10_12:15:33.64138 time=2026-07-10T12:15:33.641Z level=INFO source=head.go:902 msg="WAL replay completed" component=tsdb checkpoint_replay_duration=233.154447ms wal_replay_duration=754.633949ms wbl_replay_duration=200ns chunk_snapshot_load_duration=0s mmap_chunk_replay_duration=1.222µs total_replay_duration=987.814414ms
+2026-07-10_12:15:33.75577 time=2026-07-10T12:15:33.755Z level=INFO source=main.go:1431 msg="filesystem information" fs_type=EXT4_SUPER_MAGIC
+2026-07-10_12:15:33.75585 time=2026-07-10T12:15:33.755Z level=INFO source=main.go:1434 msg="TSDB started"
+2026-07-10_12:15:33.75589 time=2026-07-10T12:15:33.755Z level=INFO source=main.go:1632 msg="Loading configuration file" filename=/var/opt/gitlab/prometheus/prometheus.yml
+2026-07-10_12:15:33.76004 time=2026-07-10T12:15:33.759Z level=INFO source=main.go:1048 msg="TSDB retention updated" duration=15d size=0B percentage=0
+2026-07-10_12:15:33.76427 time=2026-07-10T12:15:33.764Z level=ERROR source=manager.go:506 msg="Cannot create service discovery" component="discovery manager scrape" err="unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes config=kubernetes-cadvisor
+2026-07-10_12:15:33.76435 time=2026-07-10T12:15:33.764Z level=ERROR source=manager.go:506 msg="Cannot create service discovery" component="discovery manager scrape" err="unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes config=kubernetes-nodes
+2026-07-10_12:15:33.76438 time=2026-07-10T12:15:33.764Z level=ERROR source=manager.go:506 msg="Cannot create service discovery" component="discovery manager scrape" err="unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" type=kubernetes config=kubernetes-pods
+2026-07-10_12:15:33.77524 time=2026-07-10T12:15:33.775Z level=INFO source=main.go:1671 msg="Completed loading of configuration file" db_storage=75.192µs remote_storage=2.593µs web_handler=881ns query_engine=841ns scrape=4.057795ms scrape_sd=372.563µs notify=118.125µs notify_sd=12.569µs rules=10.539623ms tracing=6.239µs filename=/var/opt/gitlab/prometheus/prometheus.yml totalDuration=19.404525ms
+2026-07-10_12:15:33.77531 time=2026-07-10T12:15:33.775Z level=INFO source=main.go:1395 msg="Server is ready to receive web requests."
+2026-07-10_12:15:33.77538 time=2026-07-10T12:15:33.775Z level=INFO source=manager.go:209 msg="Starting rule manager..." component="rule manager"
+2026-07-10_12:15:38.77610 time=2026-07-10T12:15:38.776Z level=ERROR source=manager.go:266 msg="error creating new scrape pool" component="scrape manager" err="error creating HTTP client: unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-pods
+2026-07-10_12:15:38.77632 time=2026-07-10T12:15:38.776Z level=ERROR source=manager.go:266 msg="error creating new scrape pool" component="scrape manager" err="error creating HTTP client: unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-cadvisor
+2026-07-10_12:15:38.77639 time=2026-07-10T12:15:38.776Z level=ERROR source=manager.go:266 msg="error creating new scrape pool" component="scrape manager" err="error creating HTTP client: unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory" scrape_pool=kubernetes-nodes
+2026-07-10_12:15:41.45339 time=2026-07-10T12:15:41.453Z level=INFO source=compact.go:590 msg="write block started" component=tsdb mint=1783670400000 maxt=1783677600000 ulid=01KX5Z8YWD2QX4SQ2NBQT5X9XG
+2026-07-10_12:15:41.51795 time=2026-07-10T12:15:41.517Z level=INFO source=compact.go:618 msg="write block resulted in empty block" component=tsdb mint=1783670400000 maxt=1783677600000 duration=64.586921ms
+2026-07-10_12:15:41.51825 time=2026-07-10T12:15:41.518Z level=INFO source=head.go:1478 msg="Head GC started" component=tsdb caller=truncateMemory
+2026-07-10_12:15:41.53047 time=2026-07-10T12:15:41.530Z level=INFO source=head.go:1482 msg="Head GC completed" component=tsdb caller=truncateMemory duration=12.254666ms
+2026-07-10_12:15:41.53066 time=2026-07-10T12:15:41.530Z level=INFO source=checkpoint.go:109 msg="Creating checkpoint" component=tsdb from_segment=8 to_segment=9 mint=1783677600000
+2026-07-10_12:15:41.97665 time=2026-07-10T12:15:41.976Z level=INFO source=head.go:1443 msg="WAL checkpoint complete" component=tsdb first=8 last=9 duration=446.056097ms

@@ -1,0 +1,19 @@
+# Logfile created on 2026-07-05 07:15:50 +0000 by logger.rb/v1.7.0
+{"severity":"INFO","time":"2026-07-05T07:15:50.772Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T07:17:11.110Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T07:17:55.234Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T07:18:05.468Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T07:18:49.788Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T07:54:22.066Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T07:54:22.272Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T08:16:14.158Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T08:16:14.158Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T09:07:47.947Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-05T09:07:48.162Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-10T05:32:26.630Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-10T05:32:26.705Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-10T12:04:04.932Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-10T12:04:04.996Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-10T12:14:16.542Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-10T12:14:23.011Z","gitlab_throttle_user_allowlist":[]}
+{"severity":"INFO","time":"2026-07-10T12:15:16.778Z","gitlab_throttle_user_allowlist":[]}

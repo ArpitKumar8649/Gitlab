@@ -1,0 +1,15 @@
+2026-07-05_07:18:13.44718 time=2026-07-05T07:18:12.492Z level=WARN source=main.go:76 msg="Error loading config" err="error opening config file \"postgres_exporter.yml\": open postgres_exporter.yml: no such file or directory"
+2026-07-05_07:18:13.44727 time=2026-07-05T07:18:12.492Z level=INFO source=main.go:86 msg="Excluded databases" databases=[]
+2026-07-05_07:18:13.44728 time=2026-07-05T07:18:12.492Z level=WARN source=main.go:89 msg="The extended queries.yaml config is DEPRECATED" file=/var/opt/gitlab/postgres-exporter/queries.yaml
+2026-07-05_07:18:13.44732 time=2026-07-05T07:18:12.494Z level=INFO source=tls_config.go:354 msg="Listening on" address=127.0.0.1:9187
+2026-07-05_07:18:13.44736 time=2026-07-05T07:18:12.494Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=127.0.0.1:9187
+2026-07-05_07:18:13.44739 time=2026-07-05T07:18:12.905Z level=INFO source=server.go:96 msg="Established new database connection" fingerprint=/var/opt/gitlab/postgresql:5432
+2026-07-05_07:18:13.44742 time=2026-07-05T07:18:12.916Z level=INFO source=postgres_exporter.go:644 msg="Semantic version changed" server=/var/opt/gitlab/postgresql:5432 from=0.0.0 to=17.8.0
+2026-07-05_07:18:13.44745 time=2026-07-05T07:18:12.916Z level=ERROR source=postgres_exporter.go:665 msg="Failed to reload user queries" path=/var/opt/gitlab/postgres-exporter/queries.yaml err="open /var/opt/gitlab/postgres-exporter/queries.yaml: no such file or directory"
+2026-07-05_07:19:09.21698 time=2026-07-05T07:19:09.216Z level=WARN source=main.go:76 msg="Error loading config" err="error opening config file \"postgres_exporter.yml\": open postgres_exporter.yml: no such file or directory"
+2026-07-05_07:19:09.21746 time=2026-07-05T07:19:09.217Z level=INFO source=main.go:86 msg="Excluded databases" databases=[]
+2026-07-05_07:19:09.21779 time=2026-07-05T07:19:09.217Z level=WARN source=main.go:89 msg="The extended queries.yaml config is DEPRECATED" file=/var/opt/gitlab/postgres-exporter/queries.yaml
+2026-07-05_07:19:09.21931 time=2026-07-05T07:19:09.219Z level=INFO source=tls_config.go:354 msg="Listening on" address=127.0.0.1:9187
+2026-07-05_07:19:09.21945 time=2026-07-05T07:19:09.219Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=127.0.0.1:9187
+2026-07-05_07:19:12.90413 time=2026-07-05T07:19:12.904Z level=INFO source=server.go:96 msg="Established new database connection" fingerprint=/var/opt/gitlab/postgresql:5432
+2026-07-05_07:19:12.91064 time=2026-07-05T07:19:12.910Z level=INFO source=postgres_exporter.go:644 msg="Semantic version changed" server=/var/opt/gitlab/postgresql:5432 from=0.0.0 to=17.8.0

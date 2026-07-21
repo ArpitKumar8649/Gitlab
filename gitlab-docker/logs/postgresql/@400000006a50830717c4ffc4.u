@@ -1,0 +1,18 @@
+2026-07-05_09:07:04.59256 LOG:  starting PostgreSQL 17.8 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-07-05_09:07:04.61199 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2026-07-05_09:07:04.68847 LOG:  database system was interrupted; last known up at 2026-07-05 09:00:51 GMT
+2026-07-05_09:07:08.94922 LOG:  database system was not properly shut down; automatic recovery in progress
+2026-07-05_09:07:09.08387 LOG:  redo starts at 0/18A40F90
+2026-07-05_09:07:10.50790 LOG:  invalid record length at 0/192B27A0: expected at least 24, got 0
+2026-07-05_09:07:10.50793 LOG:  redo done at 0/192B2778 system usage: CPU: user: 0.03 s, system: 0.01 s, elapsed: 1.54 s
+2026-07-05_09:07:10.67956 LOG:  database system is ready to accept connections
+2026-07-05_09:07:29.53132 LOG:  duration: 1348.448 ms  statement: SELECT relnamespace::regnamespace as schemaname,
+2026-07-05_09:07:29.53139 	       relname as relname,
+2026-07-05_09:07:29.53139 	       pg_total_relation_size(oid) bytes
+2026-07-05_09:07:29.53140 	  FROM pg_class
+2026-07-05_09:07:29.53141 	 WHERE relkind = 'r';
+2026-07-05_09:07:29.53141 	
+2026-07-05_09:08:46.36552 ERROR:  relation "table_without_models" does not exist
+2026-07-05_09:08:46.36554 STATEMENT:  SELECT pg_get_serial_sequence('table_without_models', 'id')
+2026-07-05_09:08:48.99585 ERROR:  relation "table_without_models" does not exist
+2026-07-05_09:08:48.99590 STATEMENT:  SELECT pg_get_serial_sequence('table_without_models', 'id')

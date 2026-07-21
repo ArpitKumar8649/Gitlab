@@ -1,0 +1,7 @@
+2026-07-10_11:59:15.24465 Server listening on 0.0.0.0 port 22.
+2026-07-10_11:59:15.24475 Server listening on :: port 22.
+2026-07-10_12:00:22.99964 banner exchange: Connection from 172.18.0.1 port 48316: invalid format
+2026-07-10_12:00:23.87359 banner exchange: Connection from 172.18.0.1 port 48332: invalid format
+2026-07-10_12:00:25.09480 banner exchange: Connection from 172.18.0.1 port 48336: invalid format
+2026-07-10_12:00:26.51165 Connection closed by 172.18.0.1 port 48352
+2026-07-10_12:00:26.68781 banner exchange: Connection from 172.18.0.1 port 48362: invalid format
