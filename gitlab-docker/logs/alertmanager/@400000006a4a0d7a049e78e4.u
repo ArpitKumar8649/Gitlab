@@ -1,0 +1,21 @@
+2026-07-05_07:18:06.58010 time=2026-07-05T07:18:06.579Z level=INFO source=main.go:191 msg="Starting Alertmanager" version="(version=0.31.1, branch=master, revision=7a639ba087d6e877038cabfdaa645230f79001b8)"
+2026-07-05_07:18:06.58056 time=2026-07-05T07:18:06.580Z level=INFO source=main.go:194 msg="Build context" build_context="(go=go1.25.9, platform=linux/amd64, user=GitLab-Omnibus, date=, tags=unknown)"
+2026-07-05_07:18:06.58149 time=2026-07-05T07:18:06.581Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.18.0.2 port=9094
+2026-07-05_07:18:06.58476 time=2026-07-05T07:18:06.584Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+2026-07-05_07:18:06.63075 time=2026-07-05T07:18:06.630Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2026-07-05_07:18:06.63255 time=2026-07-05T07:18:06.631Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2026-07-05_07:18:06.63540 time=2026-07-05T07:18:06.635Z level=INFO source=tls_config.go:354 msg="Listening on" address=127.0.0.1:9093
+2026-07-05_07:18:06.63550 time=2026-07-05T07:18:06.635Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=127.0.0.1:9093
+2026-07-05_07:18:08.83916 time=2026-07-05T07:18:08.586Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.000991118s
+2026-07-05_07:18:16.59001 time=2026-07-05T07:18:16.589Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.004816525s
+2026-07-05_07:19:08.70387 time=2026-07-05T07:19:08.703Z level=INFO source=main.go:629 msg="Received SIGTERM, exiting gracefully..."
+2026-07-05_07:19:08.73430 time=2026-07-05T07:19:08.734Z level=INFO source=main.go:191 msg="Starting Alertmanager" version="(version=0.31.1, branch=master, revision=7a639ba087d6e877038cabfdaa645230f79001b8)"
+2026-07-05_07:19:08.73446 time=2026-07-05T07:19:08.734Z level=INFO source=main.go:194 msg="Build context" build_context="(go=go1.25.9, platform=linux/amd64, user=GitLab-Omnibus, date=, tags=unknown)"
+2026-07-05_07:19:08.73595 time=2026-07-05T07:19:08.735Z level=INFO source=cluster.go:192 msg="setting advertise address explicitly" component=cluster addr=172.18.0.2 port=9094
+2026-07-05_07:19:08.73698 time=2026-07-05T07:19:08.736Z level=INFO source=cluster.go:682 msg="Waiting for gossip to settle..." component=cluster interval=2s
+2026-07-05_07:19:08.77984 time=2026-07-05T07:19:08.779Z level=INFO source=coordinator.go:111 msg="Loading configuration file" component=configuration file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2026-07-05_07:19:08.78010 time=2026-07-05T07:19:08.780Z level=INFO source=coordinator.go:124 msg="Completed loading of configuration file" component=configuration file=/var/opt/gitlab/alertmanager/alertmanager.yml
+2026-07-05_07:19:08.78537 time=2026-07-05T07:19:08.785Z level=INFO source=tls_config.go:354 msg="Listening on" address=127.0.0.1:9093
+2026-07-05_07:19:08.78547 time=2026-07-05T07:19:08.785Z level=INFO source=tls_config.go:357 msg="TLS is disabled." http2=false address=127.0.0.1:9093
+2026-07-05_07:19:10.73749 time=2026-07-05T07:19:10.737Z level=INFO source=cluster.go:707 msg="gossip not settled" component=cluster polls=0 before=0 now=1 elapsed=2.000434477s
+2026-07-05_07:19:18.74083 time=2026-07-05T07:19:18.740Z level=INFO source=cluster.go:699 msg="gossip settled; proceeding" component=cluster elapsed=10.003795073s

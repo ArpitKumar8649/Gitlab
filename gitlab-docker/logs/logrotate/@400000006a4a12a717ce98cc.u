@@ -1,0 +1,18 @@
+2026-07-05_08:02:47.23996 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/nginx: 0666
+2026-07-05_08:02:47.24014 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/nginx because it is writable by group or others.
+2026-07-05_08:02:47.24016 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/puma: 0666
+2026-07-05_08:02:47.24017 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/puma because it is writable by group or others.
+2026-07-05_08:02:47.24018 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/gitlab-rails: 0666
+2026-07-05_08:02:47.24018 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/gitlab-rails because it is writable by group or others.
+2026-07-05_08:02:47.24019 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/gitlab-shell: 0666
+2026-07-05_08:02:47.24019 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/gitlab-shell because it is writable by group or others.
+2026-07-05_08:02:47.24020 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/gitlab-workhorse: 0666
+2026-07-05_08:02:47.24020 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/gitlab-workhorse because it is writable by group or others.
+2026-07-05_08:02:47.24021 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/gitlab-pages: 0666
+2026-07-05_08:02:47.24021 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/gitlab-pages because it is writable by group or others.
+2026-07-05_08:02:47.24022 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/gitlab-kas: 0666
+2026-07-05_08:02:47.24024 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/gitlab-kas because it is writable by group or others.
+2026-07-05_08:02:47.24025 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/gitaly: 0666
+2026-07-05_08:02:47.24025 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/gitaly because it is writable by group or others.
+2026-07-05_08:02:47.24026 warning: Potentially dangerous mode on /var/opt/gitlab/logrotate/logrotate.d/mailroom: 0666
+2026-07-05_08:02:47.24026 error: Ignoring /var/opt/gitlab/logrotate/logrotate.d/mailroom because it is writable by group or others.

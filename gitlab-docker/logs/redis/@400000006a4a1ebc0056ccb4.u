@@ -1,0 +1,76 @@
+2026-07-05_08:15:25.87194 514:C 05 Jul 2026 08:15:25.871 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2026-07-05_08:15:25.87206 514:C 05 Jul 2026 08:15:25.871 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2026-07-05_08:15:25.87206 514:C 05 Jul 2026 08:15:25.871 * Redis version=7.2.13, bits=64, commit=2ed2a678, modified=0, pid=514, just started
+2026-07-05_08:15:25.87207 514:C 05 Jul 2026 08:15:25.871 * Configuration loaded
+2026-07-05_08:15:25.87227 514:M 05 Jul 2026 08:15:25.872 * monotonic clock: POSIX clock_gettime
+2026-07-05_08:15:25.88919 514:M 05 Jul 2026 08:15:25.888 # Failed to write PID file: Permission denied
+2026-07-05_08:15:25.88921                 _._                                                  
+2026-07-05_08:15:25.88922            _.-``__ ''-._                                             
+2026-07-05_08:15:25.88922       _.-``    `.  `_.  ''-._           Redis 7.2.13 (2ed2a678/0) 64 bit
+2026-07-05_08:15:25.88922   .-`` .-```.  ```\/    _.,_ ''-._                                  
+2026-07-05_08:15:25.88923  (    '      ,       .-`  | `,    )     Running in standalone mode
+2026-07-05_08:15:25.88923  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 0
+2026-07-05_08:15:25.88923  |    `-._   `._    /     _.-'    |     PID: 514
+2026-07-05_08:15:25.88924   `-._    `-._  `-./  _.-'    _.-'                                   
+2026-07-05_08:15:25.88924  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2026-07-05_08:15:25.88924  |    `-._`-._        _.-'_.-'    |           https://redis.io       
+2026-07-05_08:15:25.88925   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2026-07-05_08:15:25.88926  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2026-07-05_08:15:25.88926  |    `-._`-._        _.-'_.-'    |                                  
+2026-07-05_08:15:25.88926   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2026-07-05_08:15:25.88927       `-._    `-.__.-'    _.-'                                       
+2026-07-05_08:15:25.88929           `-._        _.-'                                           
+2026-07-05_08:15:25.88929               `-.__.-'                                               
+2026-07-05_08:15:25.88929 
+2026-07-05_08:15:25.88930 514:M 05 Jul 2026 08:15:25.889 * Server initialized
+2026-07-05_08:15:25.93271 514:M 05 Jul 2026 08:15:25.932 * Loading RDB produced by version 7.2.13
+2026-07-05_08:15:25.93273 514:M 05 Jul 2026 08:15:25.932 * RDB age 153 seconds
+2026-07-05_08:15:25.93273 514:M 05 Jul 2026 08:15:25.932 * RDB memory usage when created 4.49 Mb
+2026-07-05_08:15:26.12599 514:M 05 Jul 2026 08:15:26.125 * Done loading RDB, keys loaded: 3640, keys expired: 5.
+2026-07-05_08:15:26.12602 514:M 05 Jul 2026 08:15:26.125 * DB loaded from disk: 0.237 seconds
+2026-07-05_08:15:26.12603 514:M 05 Jul 2026 08:15:26.126 * Ready to accept connections unix
+2026-07-05_08:20:07.76644 514:M 05 Jul 2026 08:20:07.766 * 10000 changes in 60 seconds. Saving...
+2026-07-05_08:20:07.76691 514:M 05 Jul 2026 08:20:07.766 * Background saving started by pid 1354
+2026-07-05_08:20:07.81389 1354:C 05 Jul 2026 08:20:07.813 * DB saved on disk
+2026-07-05_08:20:07.81454 1354:C 05 Jul 2026 08:20:07.814 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+2026-07-05_08:20:07.86726 514:M 05 Jul 2026 08:20:07.867 * Background saving terminated with success
+2026-07-05_08:25:08.08963 514:M 05 Jul 2026 08:25:08.089 * 10 changes in 300 seconds. Saving...
+2026-07-05_08:25:08.09018 514:M 05 Jul 2026 08:25:08.090 * Background saving started by pid 1791
+2026-07-05_08:25:08.12995 1791:C 05 Jul 2026 08:25:08.129 * DB saved on disk
+2026-07-05_08:25:08.13054 1791:C 05 Jul 2026 08:25:08.130 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2026-07-05_08:25:08.19045 514:M 05 Jul 2026 08:25:08.190 * Background saving terminated with success
+2026-07-05_08:30:09.02715 514:M 05 Jul 2026 08:30:09.027 * 10 changes in 300 seconds. Saving...
+2026-07-05_08:30:09.02761 514:M 05 Jul 2026 08:30:09.027 * Background saving started by pid 2227
+2026-07-05_08:30:09.08340 2227:C 05 Jul 2026 08:30:09.082 * DB saved on disk
+2026-07-05_08:30:09.08343 2227:C 05 Jul 2026 08:30:09.082 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2026-07-05_08:30:09.12797 514:M 05 Jul 2026 08:30:09.127 * Background saving terminated with success
+2026-07-05_08:35:10.00588 514:M 05 Jul 2026 08:35:10.005 * 10 changes in 300 seconds. Saving...
+2026-07-05_08:35:10.00646 514:M 05 Jul 2026 08:35:10.006 * Background saving started by pid 2655
+2026-07-05_08:35:10.06408 2655:C 05 Jul 2026 08:35:10.064 * DB saved on disk
+2026-07-05_08:35:10.06499 2655:C 05 Jul 2026 08:35:10.064 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 1 MB
+2026-07-05_08:35:10.10714 514:M 05 Jul 2026 08:35:10.107 * Background saving terminated with success
+2026-07-05_08:40:11.00145 514:M 05 Jul 2026 08:40:11.001 * 10 changes in 300 seconds. Saving...
+2026-07-05_08:40:11.00214 514:M 05 Jul 2026 08:40:11.002 * Background saving started by pid 3088
+2026-07-05_08:40:11.05433 3088:C 05 Jul 2026 08:40:11.054 * DB saved on disk
+2026-07-05_08:40:11.05500 3088:C 05 Jul 2026 08:40:11.054 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+2026-07-05_08:40:11.10247 514:M 05 Jul 2026 08:40:11.102 * Background saving terminated with success
+2026-07-05_08:45:12.07606 514:M 05 Jul 2026 08:45:12.075 * 10 changes in 300 seconds. Saving...
+2026-07-05_08:45:12.07665 514:M 05 Jul 2026 08:45:12.076 * Background saving started by pid 3611
+2026-07-05_08:45:12.13415 3611:C 05 Jul 2026 08:45:12.134 * DB saved on disk
+2026-07-05_08:45:12.13484 3611:C 05 Jul 2026 08:45:12.134 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+2026-07-05_08:45:12.17775 514:M 05 Jul 2026 08:45:12.177 * Background saving terminated with success
+2026-07-05_08:50:13.01537 514:M 05 Jul 2026 08:50:13.015 * 10 changes in 300 seconds. Saving...
+2026-07-05_08:50:13.01654 514:M 05 Jul 2026 08:50:13.016 * Background saving started by pid 4063
+2026-07-05_08:50:13.11036 4063:C 05 Jul 2026 08:50:13.110 * DB saved on disk
+2026-07-05_08:50:13.11133 4063:C 05 Jul 2026 08:50:13.111 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 1 MB
+2026-07-05_08:50:13.11679 514:M 05 Jul 2026 08:50:13.116 * Background saving terminated with success
+2026-07-05_08:55:14.09067 514:M 05 Jul 2026 08:55:14.090 * 10 changes in 300 seconds. Saving...
+2026-07-05_08:55:14.09117 514:M 05 Jul 2026 08:55:14.091 * Background saving started by pid 4646
+2026-07-05_08:55:14.14697 4646:C 05 Jul 2026 08:55:14.146 * DB saved on disk
+2026-07-05_08:55:14.14760 4646:C 05 Jul 2026 08:55:14.147 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+2026-07-05_08:55:14.19147 514:M 05 Jul 2026 08:55:14.191 * Background saving terminated with success
+2026-07-05_09:00:15.04019 514:M 05 Jul 2026 09:00:15.040 * 10 changes in 300 seconds. Saving...
+2026-07-05_09:00:15.04079 514:M 05 Jul 2026 09:00:15.040 * Background saving started by pid 5227
+2026-07-05_09:00:15.09908 5227:C 05 Jul 2026 09:00:15.099 * DB saved on disk
+2026-07-05_09:00:15.09967 5227:C 05 Jul 2026 09:00:15.099 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+2026-07-05_09:00:15.14110 514:M 05 Jul 2026 09:00:15.141 * Background saving terminated with success
